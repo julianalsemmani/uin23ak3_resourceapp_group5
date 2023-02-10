@@ -1,10 +1,18 @@
 import './App.css';
+import {Link} from 'react';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Test</h1>
-    </div>
+    <>
+    <header></header>
+        <nav>
+          <Link/>
+        </nav>
+        <main>
+          <article></article>
+        </main>
+    </>
+   
   );
 }
 
