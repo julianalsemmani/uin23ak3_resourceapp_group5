@@ -11,7 +11,11 @@ export default function MainContent() {
           category={source.category}
           content={source.text}
           resources={source.sources.map((link, index) => {
-            return <li key={index}>{link.title}</li>;
+            return (
+              <li key={index}>
+                <a href={link.url}>{link.title}</a>
+              </li>
+            );
           })}
           id={source.category}
         />
