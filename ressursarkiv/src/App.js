@@ -1,13 +1,12 @@
 import "./App.css";
+import Header from "./components/Header";
 // import {Link} from 'react';
 import MainContent from "./components/MainContent";
 
 function App() {
   return (
     <>
-      <header>
-        <h1>Test</h1>
-      </header>
+      <Header/>
       <nav>{/* <Link/> */}</nav>
       <MainContent />
     </>
