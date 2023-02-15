@@ -1,0 +1,10 @@
+@use '../abstracts/variables';
+
+.pageHeader{
+    border: variables.$border-basis;
+    padding: 1rem;
+}
+
+.headerTitle{
+    text-transform: uppercase;
+}

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-body {
+:root {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
 }
@@ -9,4 +9,18 @@ body {
   margin: 0 auto;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvYmFzZS9fdHlwb2dyYXBoeS5zY3NzIiwiLi4vc2Fzcy9hYnN0cmFjdHMvX3ZhcmlhYmxlcy5zY3NzIiwibWFpbi5jc3MiLCIuLi9zYXNzL2xheW91dC9fY29udGFpbmVyLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQVEsNEZBQUE7QUFFUjtFQUNJLGlDQUFBO0VBQ0EsZUNGYztBQ0VsQjs7QUNEQTtFQUNJLGlCRkpRO0VFS1IsY0FBQTtBRElKIiwiZmlsZSI6Im1haW4uY3NzIn0= */
+.pageHeader {
+  border: 1px solid #b7b7b7;
+  padding: 1rem;
+}
+
+.headerTitle {
+  text-transform: uppercase;
+}
+
+main {
+  padding: 1rem;
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

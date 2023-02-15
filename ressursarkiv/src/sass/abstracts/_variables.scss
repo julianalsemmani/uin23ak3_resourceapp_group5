@@ -1,4 +1,25 @@
+//sizes
 $max-width: 1200px;
 
 $font-size-basis: 20px;
 $font-size-small: 16px;
+
+//colors
+$turqouise: #25DFE6; 
+$border-grey: #b7b7b7;
+
+$turqouise-dark1: #248386;
+$turqouise-dark2: #157C82;
+$turqouise-dark3: #0D4C50;
+$turqouise-dark4: #006165;
+$text-color-dark: #373737;
+
+
+//values
+$border-basis: 1px solid $border-grey;
+
+
+
+//breakpoints
+$breakpoint-small: 600px;
+$breakpoint-mini: 300px;

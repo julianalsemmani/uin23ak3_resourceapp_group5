@@ -1,1 +1,4 @@
-@import './layout/container';
+@use './base/typography';
+@use './layout/container';
+@use './layout/header';
+@use './layout/mainContent';

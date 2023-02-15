@@ -1,7 +1,6 @@
-@import "../abstracts/variables";
-@import "../base/typography";
+@use '../abstracts/variables';
 
 .container{
-    max-width: $max-width;
+    max-width: variables.$max-width;
     margin: 0 auto;
 }
