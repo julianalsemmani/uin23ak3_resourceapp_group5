@@ -1,1 +1,48 @@
-@use 'variables';
+@use 'variables' as *;
+
+@mixin nav-button(){
+    font-size: 1.1rem;
+ 
+    text-decoration: none;
+    text-transform: uppercase; 
+
+    outline: none;
+
+    padding: 0.8rem 1.2rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    
+}
+
+@mixin button-style($color, $background-color, $border){
+    color: $color;
+    background-color: $background-color;
+    border: $border;
+    outline: none;
+
+}
+
+@mixin button-default-style(){
+    background-color: $background-grey;
+    color: $font-grey;
+    border: $border-basis;
+    border-bottom: none;
+    
+}
+
+@mixin button-active-style(){
+    background-color: $turqouise;
+    color: $text-color-dark;
+    border: 1px solid $turqouise;
+    outline: none;
+}
+
+@mixin nav-border(){
+    border-bottom: 6px solid $turqouise; 
+}
+
+@mixin main-border(){
+    border: $border-basis;
+    border-top: none;
+}

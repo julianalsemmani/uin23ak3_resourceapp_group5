@@ -1,6 +1,6 @@
-@use '../abstracts/variables';
+@use '../abstracts/index.scss' as *;
 
 .container{
-    max-width: variables.$max-width;
+    max-width: $max-width;
     margin: 0 auto;
 }

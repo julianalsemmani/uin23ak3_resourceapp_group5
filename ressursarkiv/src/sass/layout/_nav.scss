@@ -1,0 +1,43 @@
+@use '../abstracts/index.scss' as *;
+
+nav button{
+    @include nav-button;
+}
+.defaultStyle {
+    @include button-default-style;
+
+}
+
+.activeStyle {
+    @include button-style($text-color-dark, $turqouise,$border-turqouise);
+}
+
+.testStyle {
+    @include button-style(white, $turqouise-dark1, $border-darker1);
+}
+
+.test2Style {
+    @include button-style(white, $turqouise-dark2, $border-darker2);
+}
+
+nav{
+    @include nav-border;
+    display: flex;   
+    flex-wrap: wrap;
+    margin: 0 1rem;
+}
+
+
+@media (max-width: $breakpoint-small){
+    nav{
+        display: block;
+        button{
+            width: 100%;
+        }
+        .defaultStyle{
+            border: $border-basis;
+        }
+       
+    }
+
+}

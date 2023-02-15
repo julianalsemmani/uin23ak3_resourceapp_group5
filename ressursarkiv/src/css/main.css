@@ -4,6 +4,11 @@
   font-size: 20px;
 }
 
+@media (max-width: 600px) {
+  :root {
+    font-size: 16px;
+  }
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -12,15 +17,79 @@
 .pageHeader {
   border: 1px solid #b7b7b7;
   padding: 1rem;
+  box-sizing: border-box;
+  margin: 2rem 1rem;
 }
 
 .headerTitle {
   text-transform: uppercase;
+  color: #707070;
 }
 
+nav button {
+  font-size: 1.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: none;
+  padding: 0.8rem 1.2rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.defaultStyle {
+  background-color: #f5f5f5;
+  color: #707070;
+  border: 1px solid #b7b7b7;
+  border-bottom: none;
+}
+
+.activeStyle {
+  color: #373737;
+  background-color: #25DFE6;
+  border: 1px solid #25DFE6;
+  outline: none;
+}
+
+.testStyle {
+  color: white;
+  background-color: #248386;
+  border: 1px solid #248386;
+  outline: none;
+}
+
+.test2Style {
+  color: white;
+  background-color: #157C82;
+  border: 1px solid #157C82;
+  outline: none;
+}
+
+nav {
+  border-bottom: 6px solid #25DFE6;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 1rem;
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: block;
+  }
+  nav button {
+    width: 100%;
+  }
+  nav .defaultStyle {
+    border: 1px solid #b7b7b7;
+  }
+}
 main {
   padding: 1rem;
   max-width: 100%;
+  border: 1px solid #b7b7b7;
+  border-top: none;
+  overflow: hidden;
+  margin: 0 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

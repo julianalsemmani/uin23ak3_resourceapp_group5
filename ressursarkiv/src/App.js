@@ -7,7 +7,13 @@ function App() {
   return (
     <div className="container">
       <Header/>
-      <nav>{/* <Link/> */}</nav>
+      <nav>
+        <button className='defaultStyle'>A</button>
+        <button className='activeStyle'>A</button>
+        <button className='testStyle'>A</button>
+        <button className='test2Style'>A</button>
+
+        {/* <Link/> */}</nav>
       <MainContent />
     </div>
   );
