@@ -12,7 +12,7 @@ export default function MainContent() {
           content={source.text}
           resources={source.sources.map((link, index) => {
             return (
-              <li key={index}>
+              <li className="link-item" key={index}>
                 <a href={link.url}>{link.title}</a>
               </li>
             );

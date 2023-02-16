@@ -8,6 +8,12 @@
   :root {
     font-size: 16px;
   }
+  .page-content {
+    font-size: 1.3rem;
+  }
+  .page-content .link-item {
+    font-size: 1.4rem;
+  }
 }
 .container {
   max-width: 1200px;
@@ -104,6 +110,16 @@ main {
   border-top: none;
   overflow: hidden;
   margin: 0 1rem;
+  color: #494949;
+}
+main .page-content {
+  line-height: 1.5;
+}
+main .page-content .content-links .link-item {
+  line-height: 1.5;
+}
+main .page-content .content-links .link-item a {
+  color: #157C82;
 }
 
 /*# sourceMappingURL=main.css.map */

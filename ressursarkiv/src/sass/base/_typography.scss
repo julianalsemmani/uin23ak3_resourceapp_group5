@@ -10,6 +10,12 @@
 @media (max-width: $breakpoint-small){
     :root{
         font-size: $font-size-small;
-
+       
+        }
+        .page-content{
+            font-size: 1.3rem;
+            .link-item{
+                font-size: 1.4rem;
+            }
     }  
 }

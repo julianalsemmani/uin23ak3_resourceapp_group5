@@ -1,25 +1,9 @@
+@use 'colors' as *;
 //sizes
 $max-width: 1200px;
 
 $font-size-basis: 20px;
 $font-size-small: 16px;
-
-//colors
-$turqouise: #25DFE6; 
-$border-grey: #b7b7b7;
-$font-grey: #707070;
-$font-grey2: #494949;
-$background-grey: #f5f5f5;
-
-$text-color-dark: #373737;
-
-$turqouise-dark1: #248386;
-$turqouise-dark2: #157C82;
-
-//only colors AAA with white text
-$turqouise-dark3: #0D4C50;
-$turqouise-dark4: #006165;
-
 
 //borders
 $border-basis: 1px solid $border-grey;
@@ -28,8 +12,6 @@ $border-darker1: 1px solid $turqouise-dark1;
 $border-darker2: 1px solid $turqouise-dark2;
 $border-darker3: 1px solid $turqouise-dark3;
 $border-darker4: 1px solid $turqouise-dark4;
-
-
 
 //breakpoints
 $breakpoint-small: 600px;

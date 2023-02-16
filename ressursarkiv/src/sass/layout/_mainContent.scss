@@ -7,4 +7,19 @@ main{
 
     overflow: hidden;
     margin: 0 1rem;
+
+    color: $font-grey2;
+
+    .page-content{
+        line-height: 1.5;
+
+        .content-links{
+            .link-item{
+                line-height: 1.5;
+                a{
+                    color: $turqouise-dark2;
+                }
+            }
+        }
+    }
 }
