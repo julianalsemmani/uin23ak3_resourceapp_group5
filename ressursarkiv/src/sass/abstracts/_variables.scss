@@ -10,12 +10,14 @@ $border-grey: #b7b7b7;
 $font-grey: #707070;
 $background-grey: #f5f5f5;
 
+$text-color-dark: #373737;
+
 $turqouise-dark1: #248386;
 $turqouise-dark2: #157C82;
+
+//only colors AAA with white text
 $turqouise-dark3: #0D4C50;
 $turqouise-dark4: #006165;
-
-$text-color-dark: #373737;
 
 
 //values
@@ -23,6 +25,8 @@ $border-basis: 1px solid $border-grey;
 $border-turqouise: 1px solid $turqouise;
 $border-darker1: 1px solid $turqouise-dark1;
 $border-darker2: 1px solid $turqouise-dark2;
+$border-darker3: 1px solid $turqouise-dark3;
+$border-darker4: 1px solid $turqouise-dark4;
 
 
 

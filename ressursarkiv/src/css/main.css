@@ -65,6 +65,20 @@ nav button {
   outline: none;
 }
 
+.test3Style {
+  color: white;
+  background-color: #0D4C50;
+  border: 1px solid #0D4C50;
+  outline: none;
+}
+
+.test4Style {
+  color: white;
+  background-color: #006165;
+  border: 1px solid #006165;
+  outline: none;
+}
+
 nav {
   border-bottom: 6px solid #25DFE6;
   display: flex;

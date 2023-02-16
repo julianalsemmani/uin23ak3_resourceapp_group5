@@ -20,6 +20,14 @@ nav button{
     @include button-style(white, $turqouise-dark2, $border-darker2);
 }
 
+.test3Style {
+    @include button-style(white, $turqouise-dark3, $border-darker3);
+}
+
+.test4Style {
+    @include button-style(white, $turqouise-dark4, $border-darker4);
+}
+
 nav{
     @include nav-border;
     display: flex;   

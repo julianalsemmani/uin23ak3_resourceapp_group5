@@ -12,6 +12,8 @@ function App() {
         <button className='activeStyle'>A</button>
         <button className='testStyle'>A</button>
         <button className='test2Style'>A</button>
+        <button className='test3Style'>A</button>
+        <button className='test4Style'>A</button>
 
         {/* <Link/> */}</nav>
       <MainContent />
