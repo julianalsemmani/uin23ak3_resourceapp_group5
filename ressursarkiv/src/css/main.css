@@ -1,22 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 :root {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
 }
 
-@media (max-width: 600px) {
-  :root {
-    font-size: 16px;
-  }
+@media (max-width: 768px) {
   .page-content {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .page-content .link-item {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 320px) {
+  .headerTitle {
+    font-size: 1.5rem;
   }
 }
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -26,14 +27,17 @@
   box-sizing: border-box;
   margin: 2rem 1rem;
 }
+.pageHeader a {
+  text-decoration: none;
+}
 
 .headerTitle {
   text-transform: uppercase;
   color: #707070;
 }
 
-nav button {
-  font-size: 1.1rem;
+nav .button-link {
+  font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   outline: none;
@@ -41,66 +45,35 @@ nav button {
   margin-right: 1rem;
   margin-top: 1rem;
   margin-bottom: 0;
-}
-
-.defaultStyle {
   background-color: #f5f5f5;
-  color: #707070;
   border: 1px solid #b7b7b7;
   border-bottom: none;
+  text-decoration: none;
 }
-
-.activeStyle {
+nav .button-link a {
   color: #373737;
-  background-color: #25DFE6;
-  border: 1px solid #25DFE6;
-  outline: none;
+  text-decoration: none;
 }
 
-.testStyle {
-  color: white;
-  background-color: #248386;
-  border: 1px solid #248386;
-  outline: none;
-}
+/*nav{
+    .nav-link{
+        @include navigation-box;
+        @include link-default-style; 
 
-.test2Style {
-  color: white;
-  background-color: #157C82;
-  border: 1px solid #157C82;
-  outline: none;
-}
-
-.test3Style {
-  color: white;
-  background-color: #0D4C50;
-  border: 1px solid #0D4C50;
-  outline: none;
-}
-
-.test4Style {
-  color: white;
-  background-color: #006165;
-  border: 1px solid #006165;
-  outline: none;
-}
-
+    }
+}*/
 nav {
-  border-bottom: 6px solid #25DFE6;
+  border-bottom: 8px solid #036358;
   display: flex;
   flex-wrap: wrap;
   margin: 0 1rem;
 }
 
-@media (max-width: 600px) {
-  nav {
-    display: block;
-  }
-  nav button {
+@media (max-width: 320px) {
+  .nav-link {
     width: 100%;
-  }
-  nav .defaultStyle {
-    border: 1px solid #b7b7b7;
+    display: block;
+    margin-right: 0;
   }
 }
 main {
@@ -110,7 +83,7 @@ main {
   border-top: none;
   overflow: hidden;
   margin: 0 1rem;
-  color: #494949;
+  color: #373737;
 }
 main .page-content {
   line-height: 1.5;

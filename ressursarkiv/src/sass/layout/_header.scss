@@ -5,7 +5,12 @@
     padding: 1rem;
     box-sizing: border-box;
     margin: 2rem 1rem;
+
+    a{
+        text-decoration: none;
+    }
 }
+
 
 .headerTitle{
     text-transform: uppercase;

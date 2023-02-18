@@ -5,10 +5,11 @@ export default function Nav(){
     return (
         <nav>
            {resources.map((source, index) => (
-                <button key={index}>
+                <button className="button-link" key={index}>
                     <a href={source.category}>{source.category}</a>
                 </button>
            ))} 
+         
         </nav>
    
     )

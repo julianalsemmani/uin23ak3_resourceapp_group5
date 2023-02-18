@@ -1,46 +1,70 @@
 @use 'variables' as *;
 @use 'colors' as *;
 
-@mixin nav-button(){
-    font-size: 1.1rem;
- 
+
+//Basis for navigation elements
+@mixin navigation-box(){
+    font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase; 
-
     outline: none;
-
     padding: 0.8rem 1.2rem;
     margin-right: 1rem;
     margin-top: 1rem;
-    margin-bottom: 0;
-    
+    margin-bottom: 0;   
 }
 
-@mixin button-style($color, $background-color, $border){
-    color: $color;
-    background-color: $background-color;
-    border: $border;
-    outline: none;
-
-}
-
+//Mixin for styling button with anchor inside
+//Not active
 @mixin button-default-style(){
-    background-color: $background-grey;
-    color: $font-grey;
+    background-color: $background-grey;  
     border: $border-basis;
     border-bottom: none;
-    
+    //color: $text-color-dark;
+    text-decoration: none;    
 }
 
-@mixin button-active-style(){
-    background-color: $turqouise;
+@mixin anchor-default-style(){
     color: $text-color-dark;
-    border: 1px solid $turqouise;
-    outline: none;
+    text-decoration: none;
 }
 
+//Active style button and anchor
+@mixin button-active-style(){
+    background-color: $turqouise-dark5;
+    border: $border-darker5;
+    outline: none;
+    color: white;
+    text-decoration: none;
+}
+
+@mixin anchor-active-style(){
+    color: white;
+    text-decoration: none;
+}
+
+
+//mixin for navigation with only link
+@mixin link-default-style(){
+    background-color: $background-grey;
+    border: $border-basis;
+    border-bottom: none;
+    outline: none;
+    color: $text-color-dark;
+    text-decoration: none;
+}
+
+@mixin link-active-style(){
+    background-color: $turqouise-dark5;
+    border: $border-darker5;
+    outline: none;
+    color: white;
+    text-decoration: none;
+}
+
+//Borders
 @mixin nav-border(){
-    border-bottom: 6px solid $turqouise; 
+    border-bottom: 8px solid $turqouise-dark5; 
 }
 
 @mixin main-border(){

@@ -1,18 +1,22 @@
 @use 'colors' as *;
-//sizes
-$max-width: 1200px;
+//Sizes
+$max-width: 1000px;
 
 $font-size-basis: 20px;
 $font-size-small: 16px;
 
-//borders
+//Borders
 $border-basis: 1px solid $border-grey;
-$border-turqouise: 1px solid $turqouise;
+
+//On contrast level AA
 $border-darker1: 1px solid $turqouise-dark1;
 $border-darker2: 1px solid $turqouise-dark2;
+
+//contrast level AAA
 $border-darker3: 1px solid $turqouise-dark3;
 $border-darker4: 1px solid $turqouise-dark4;
+$border-darker5: 1px solid $turqouise-dark5;
 
-//breakpoints
-$breakpoint-small: 600px;
-$breakpoint-mini: 300px;
+//Breakpoints
+$breakpoint-small: 768px;
+$breakpoint-mini: 320px;
