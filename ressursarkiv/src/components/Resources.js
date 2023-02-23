@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function Articles({ category, content, resources }) {
+export default function Resources({ category, content, resourceList }) {
   return (
     <>
       <article>
         <h2>{category}</h2>
         <p>{content}</p>
-        <ul>{resources}</ul>
+        <ul>{resourceList}</ul>
       </article>
     </>
   );
