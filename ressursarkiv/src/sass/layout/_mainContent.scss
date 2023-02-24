@@ -1,0 +1,25 @@
+@use '../abstracts/index.scss' as *;
+
+main{
+    padding: 1rem;
+    max-width: 100%;
+    @include main-border;
+
+    overflow: hidden;
+    margin: 0 1rem;
+
+    color: $text-color-dark;
+
+    .page-content{
+        line-height: 1.5;
+
+        .content-links{
+            .link-item{
+                line-height: 1.5;
+                a{
+                    color: $turqouise-dark2;
+                }
+            }
+        }
+    }
+}

@@ -1,9 +1,9 @@
-
 export default function Header(){
-    return (
+    const title = "ressursarkiv";
+    return (    
         <header className="pageHeader">
-             <h1 className="headerTitle">RESSURSARKIV</h1>
-        </header>
+                <h1 className="headerTitle">{title}</h1>
+        </header>   
    
     )
 }

@@ -1,4 +1,4 @@
-import "./App.css";
+import './css/main.css';
 import React from "react";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import { resources } from "./data/resources";
 import Resources from "./components/Resources";
 import Layout from "./components/Layout";
+
 
 /**
    <Header />

@@ -1,0 +1,19 @@
+@use '../abstracts/index.scss' as *;
+
+.pageHeader{
+    border: $border-basis;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 2rem 1rem;
+
+    a{
+        text-decoration: none;
+    }
+}
+
+
+.headerTitle{
+    text-transform: uppercase;
+    color: $font-grey;
+    
+}
