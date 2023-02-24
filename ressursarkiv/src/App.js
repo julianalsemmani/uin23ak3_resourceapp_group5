@@ -5,16 +5,21 @@ import Nav from "./components/Nav";
 import { Routes, Route } from "react-router-dom";
 import { resources } from "./data/resources";
 import Resources from "./components/Resources";
+import Layout from "./components/Layout";
 
+/**
+   <Header />
+      <Nav resources={resources} />
+ */
 function App() {
   return (
     <>
-      <Header />
-      <Nav resources={resources} />
+    
       <Routes>
-        {resources.map((source, index) => (
+        <Route path="/" element={<Layout />}>     
+          {resources.map((source, index) => (
           <Route
-            path={"/" + source.category}
+            path={source.category}
             key={index}
             element={
               <Resources
@@ -33,6 +38,7 @@ function App() {
             }
           />
         ))}
+        </Route>
       </Routes>
     </>
   );
