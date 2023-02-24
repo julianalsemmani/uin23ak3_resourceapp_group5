@@ -1,7 +1,7 @@
 @use '../abstracts/index.scss' as *;
 
 //button and link
-nav {
+/*nav {
     .button-link{
         @include navigation-box;
         @include button-default-style;
@@ -10,17 +10,22 @@ nav {
             @include anchor-default-style; 
         }
     }
-}
+}*/
 
 
 //If we choose only link for navigation
-/*nav{
+nav{
     .nav-link{
         @include navigation-box;
         @include link-default-style; 
 
     }
-}*/
+}
+
+.active{
+    @include navigation-box;
+    @include link-active-style;
+}
 
 nav{
     @include nav-border;

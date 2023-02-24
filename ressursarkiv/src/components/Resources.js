@@ -3,10 +3,10 @@ import React from "react";
 export default function Resources({ category, content, resourceList }) {
   return (
     <>
-      <article>
+      <article className="page-content">
         <h2>{category}</h2>
         <p>{content}</p>
-        <ul>{resourceList}</ul>
+        <ul className="content-links">{resourceList}</ul>
       </article>
     </>
   );

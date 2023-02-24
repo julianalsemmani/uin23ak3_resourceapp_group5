@@ -1,17 +1,11 @@
 import './css/main.css';
 import React from "react";
-import Header from "./components/Header";
-import Nav from "./components/Nav";
 import { Routes, Route } from "react-router-dom";
 import { resources } from "./data/resources";
 import Resources from "./components/Resources";
 import Layout from "./components/Layout";
 
 
-/**
-   <Header />
-      <Nav resources={resources} />
- */
 function App() {
   return (
     <>
@@ -29,7 +23,7 @@ function App() {
                 resources={resources}
                 resourceList={source.sources.map((link, index) => {
                   return (
-                    <li key={index}>
+                    <li className="link-item" key={index}>
                       <a href={link.url}>{link.title}</a>
                     </li>
                   );

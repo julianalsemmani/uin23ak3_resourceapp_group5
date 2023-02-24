@@ -1,13 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 export default function Nav({ resources }) {
   return (
     <nav>
       {resources.map((source, index) => (
-        <button key={index}>
-          <Link to={"/" + source.category}>{source.category}</Link>
-        </button>
+          <NavLink className={({ isActive }) => { 
+            return isActive ? "active"  : "nav-link"
+           }} 
+          key={index} to={"/" + source.category}>{source.category}</NavLink>
       ))}
     </nav>
   );
