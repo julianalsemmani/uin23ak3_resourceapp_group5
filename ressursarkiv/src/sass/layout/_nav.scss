@@ -1,0 +1,46 @@
+@use '../abstracts/index.scss' as *;
+
+//button and link
+/*nav {
+    .button-link{
+        @include navigation-box;
+        @include button-default-style;
+
+        a{
+            @include anchor-default-style; 
+        }
+    }
+}*/
+
+
+//If we choose only link for navigation
+nav{
+    .nav-link{
+        @include navigation-box;
+        @include link-default-style; 
+
+    }
+}
+
+.active{
+    @include navigation-box;
+    @include link-active-style;
+}
+
+nav{
+    @include nav-border;
+    display: flex;   
+    flex-wrap: wrap;
+    margin: 0 1rem;
+}
+
+
+//Organizing navigation links on small screens
+@media (max-width: $breakpoint-mini){
+    
+    .nav-link{
+        width: 100%;
+        display: block;
+        margin-right: 0;
+    }
+}

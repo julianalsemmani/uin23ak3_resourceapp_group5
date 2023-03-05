@@ -1,0 +1,24 @@
+@use '../abstracts/index.scss' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+//Font-family and font-size on different screen sizes
+:root{
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: $breakpoint-small){
+   .page-content{
+        font-size: 1rem;
+        .link-item{
+            font-size: 1.3rem;
+        }
+    }  
+}
+
+@media (max-width: $breakpoint-mini){
+
+    .headerTitle{
+        font-size: 1.5rem;
+    }
+}

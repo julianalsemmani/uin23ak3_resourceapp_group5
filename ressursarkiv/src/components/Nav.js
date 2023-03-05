@@ -1,15 +1,15 @@
 import React from "react";
-import { resources } from "../data/resources";
+import { NavLink } from "react-router-dom";
 
-export default function Nav(){
-    return (
-        <nav>
-           {resources.map((source, index) => (
-                <button key={index}>
-                    <a href={source.category}>{source.category}</a>
-                </button>
-           ))} 
-        </nav>
-   
-    )
+export default function Nav({ resources }) {
+  return (
+    <nav>
+      {resources.map((source, index) => (
+          <NavLink className={({ isActive }) => { 
+            return isActive ? "active"  : "nav-link"
+           }} 
+          key={index} to={"/" + source.category}>{source.category}</NavLink>
+      ))}
+    </nav>
+  );
 }

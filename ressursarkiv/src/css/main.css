@@ -1,3 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+:root {
+  font-family: "Roboto", sans-serif;
+}
 
+@media (max-width: 768px) {
+  .page-content {
+    font-size: 1rem;
+  }
+  .page-content .link-item {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 320px) {
+  .headerTitle {
+    font-size: 1.5rem;
+  }
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLmNzcyJ9 */
+.pageHeader {
+  border: 1px solid #b7b7b7;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin: 2rem 1rem;
+}
+.pageHeader a {
+  text-decoration: none;
+}
+
+.headerTitle {
+  text-transform: uppercase;
+  color: #707070;
+}
+
+/*nav {
+    .button-link{
+        @include navigation-box;
+        @include button-default-style;
+
+        a{
+            @include anchor-default-style; 
+        }
+    }
+}*/
+nav .nav-link {
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: none;
+  padding: 0.8rem 1.2rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  background-color: #f5f5f5;
+  border: 1px solid #b7b7b7;
+  border-bottom: none;
+  outline: none;
+  color: #373737;
+  text-decoration: none;
+}
+
+.active {
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: none;
+  padding: 0.8rem 1.2rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  background-color: #036358;
+  border: 1px solid #036358;
+  outline: none;
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  border-bottom: 8px solid #036358;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 1rem;
+}
+
+@media (max-width: 320px) {
+  .nav-link {
+    width: 100%;
+    display: block;
+    margin-right: 0;
+  }
+}
+main {
+  padding: 1rem;
+  max-width: 100%;
+  border: 1px solid #b7b7b7;
+  border-top: none;
+  overflow: hidden;
+  margin: 0 1rem;
+  color: #373737;
+}
+main .page-content {
+  line-height: 1.5;
+}
+main .page-content .content-links .link-item {
+  line-height: 1.5;
+}
+main .page-content .content-links .link-item a {
+  color: #157C82;
+}
+
+/*# sourceMappingURL=main.css.map */
